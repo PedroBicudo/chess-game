@@ -30,7 +30,7 @@ public abstract class Piece {
         return false;
     }
 
-    protected abstract boolean[][] possibleMoves();
+    public abstract boolean[][] possibleMoves();
 
 
 }

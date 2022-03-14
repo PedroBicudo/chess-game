@@ -38,6 +38,13 @@ public class ChessMatch {
 
     }
 
+    public boolean[][] possibleMoves(ChessPosition sourcePosition) {
+        Position position = sourcePosition.toPosition();
+        validateSourcePosition(position);
+
+        return board.piece(position).possibleMoves();
+    }
+
     private void validateTargetPosition(Position source, Position target) {
         Piece piece = board.piece(source);
         if (!piece.possibleMove(target)) {
