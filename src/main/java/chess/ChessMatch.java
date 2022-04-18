@@ -101,6 +101,8 @@ public class ChessMatch {
             capturedPieces.add(piece);
         }
 
+        ((ChessPiece) piece).increaseMoveCount();
+
         board.placePiece(piece, target);
 
         return capturedPiece;
@@ -115,6 +117,8 @@ public class ChessMatch {
             capturedPieces.remove(capturedPiece);
             piecesOnTheBoard.add(capturedPiece);
         }
+
+        ((ChessPiece) piece).decreaseMoveCount();
 
     }
 
