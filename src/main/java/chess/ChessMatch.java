@@ -190,7 +190,7 @@ public class ChessMatch {
                         boolean testCheck = testCheck(colorKing);
                         undoMove(source, target, capturedPiece);
 
-                        if (!testCheck(colorKing)) {
+                        if (!testCheck) {
                             return false;
                         }
 
