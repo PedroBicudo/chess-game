@@ -85,7 +85,6 @@ public class ChessMatch {
                 promoted = (ChessPiece) board.piece(target);
                 promoted = replacePromotedPiece("Q");
 
-            } else {
             }
         }
 
